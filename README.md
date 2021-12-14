@@ -8,7 +8,7 @@ Note that this tool may work on standard ELFs / ELFs not targeting the PS4, howe
 ### Build
 The tool is written in Golang. Commands should be the same between Windows and Linux assuming Golang is installed on the target system.
 
-Building is straightforward, simply go to the root directory of the tool (`/src/tools/readelf/`) and run the `go build` command.
+Building is straightforward, you can use the provided Makefile or build scripts. The script will automatically copy the built binaries to `$OO_PS4_TOOLCHAIN/bin`. If you just wish to build individual files without cross-compiling or moving to a build directory, simply go to `cmd/readoelf` and run `go build`.
 
 There is a shell build script to compile `readoelf` on Linux and macOS, and cross-compile it for Windows.
 
